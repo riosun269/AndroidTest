@@ -36,7 +36,7 @@ public class ExampleUnitTest {
 
     @Test
     public void helloButonText() {
-        assertEquals(helloBtn.getText(), "Hello world");
+        assertEquals(helloBtn.getText(), "Helllo world");
     }
 
 
