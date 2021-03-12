@@ -197,3 +197,4 @@ COPY ./ ${PROJECT_HOME}
 WORKDIR ${PROJECT_HOME}
 RUN ./gradlew test
 RUN ./gradlew assembleAndroidTest
+RUN ./gradlew build
