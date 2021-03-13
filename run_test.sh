@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2046
+rm artifacts/*
 docker container rm $(docker container ls -a -q)
 docker build -t riosun269/source-android .
 
