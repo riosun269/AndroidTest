@@ -13,7 +13,7 @@ docker container rm $(docker container ls -a -q)
 echo creating latest image
 docker create --name $CONTAINER $IMAGE
 #VAR=$(docker ps --format "{{.Names}}" -a)
-docker cp $CONTAINER:/home/src/source/app/build/test-results/testDebugUnitTest/. artifacts/
-docker cp $CONTAINER:/home/src/source/app/build/outputs/apk/debug/. artifacts/app/
-docker cp $CONTAINER:/home/src/source/app/build/outputs/apk/androidTest/debug/. artifacts/instrumentation/
+docker cp $CONTAINER:/home/src/source/app/build/test-results/testDebugUnitTest/ artifacts/
+docker cp $CONTAINER:/home/src/source/app/build/outputs/apk/debug/ artifacts/app/
+docker cp $CONTAINER:/home/src/source/app/build/outputs/apk/androidTest/debug/ artifacts/instrumentation/
 echo get artifacts done! Please check result above!!!
